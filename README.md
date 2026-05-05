@@ -14,6 +14,7 @@ A computer vision system that detects and classifies beverage containers using Y
 
 ## Architecture
 
+```
 Image Upload (POST /predict)
 ↓
 FastAPI Server
@@ -23,9 +24,10 @@ YOLOv8 Inference
 BCRS Eligibility Check
 ↓
 JSON Response
+```
 
 **Infrastructure:**
-
+```
 GitHub Push
 ↓ (triggers)
 GitHub Actions CI/CD
@@ -33,6 +35,7 @@ GitHub Actions CI/CD
 AWS ECR (Docker Registry)
 ↓ (pull & run)
 AWS ECS Fargate (Live API)
+```
 
 ## Tech Stack
 
@@ -94,6 +97,7 @@ Based on Singapore's actual BCRS scheme:
 
 ## Project Structure
 
+```
 BCRS-Vision-Pipeline/
 ├── app/
 │   ├── main.py          # FastAPI application
@@ -110,6 +114,7 @@ BCRS-Vision-Pipeline/
 ├── Dockerfile
 ├── requirements-docker.txt
 └── requirements.txt
+```
 
 ## Running Locally
 
