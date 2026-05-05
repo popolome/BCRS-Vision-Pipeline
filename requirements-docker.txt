@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+pillow
+opencv-python-headless
+numpy<2.0
+ultralytics
